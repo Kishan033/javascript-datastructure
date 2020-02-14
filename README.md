@@ -184,3 +184,55 @@ alert( Symbol.keyFor(localSymbol) ); // undefined, not global
 alert( localSymbol.description ); // name
 ```
 
+## Objects
+
+In JavaScript, objects can be seen as a collection of properties.
+
+Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String or a Symbol value.
+
+#### JSON Vs Object
+JSON is a data interchange format. It's a standard which describes how ordered lists and unordered maps, strings booleans and numbers can be represented in a string. Just like XML and YAML
+
+A JavaScript object on the other hand is a physical type. Just like a PHP array, a C++ class/ struct, a JavaScript object is an type internal to JavaScript.
+
+#### Functions
+Functions are regular objects with the additional capability of being callable.
+
+#### Dates
+Global date object is also derived from object.
+
+#### Arrays
+Arrays are regular objects for which there is a particular relationship between integer-key-ed properties and the length property.
+
+Additionally, arrays inherit from Array.prototype, which provides to them a handful of convenient methods to manipulate arrays.
+
+#### Map
+Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+
+```
+let map = new Map();
+
+map.set('1', 'str1');   // a string key
+map.set(1, 'num1');     // a numeric key
+map.set(true, 'bool1'); // a boolean key
+```
+Difference
+
+1)Any keys, objects can be keys.
+
+2)Additional convenient methods, the size property.
+
+#### Set
+A Set is a special type collection – “set of values” (without keys), where each value may occur only once.
+
+To create set ```new Set(iterable)``` .
+
+```
+let set = new Set();
+
+set.add(1);
+set.add(1);
+console.log(set);
+```
+
+Methods like add, delete, has, clear, size
