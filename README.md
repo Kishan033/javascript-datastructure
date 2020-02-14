@@ -4,21 +4,21 @@
 
 Total 7 kind of data types are available in javascript
 
-[Boolean](https://choosealicense.com/licenses/mit/)
+[Boolean](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#boolean)
 
-[Null](https://choosealicense.com/licenses/mit/)
+[Null](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#null)
 
-[Undefined](https://choosealicense.com/licenses/mit/)
+[Undefined](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#undefined)
 
-[Number](https://choosealicense.com/licenses/mit/)
+[Number](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#number)
 
-[BigInt](https://choosealicense.com/licenses/mit/)
+[BigInt](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#bigInt)
 
-[String](https://choosealicense.com/licenses/mit/)
+[String](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#string)
 
-[Symbol](https://choosealicense.com/licenses/mit/)
+[Symbol](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#symbol)
 
-[Object](https://choosealicense.com/licenses/mit/)
+[Object](https://github.com/Kishan033/javascript-datastructure/blob/master/README.md#object)
 
 First 7 are primitives
 
