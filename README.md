@@ -90,3 +90,97 @@ It has total three Symbolic value
 To check limit ```Number.MAX_SAFE_INTEGER``` and ```Number.MIN_SAFE_INTEGER```.
 
 To check safety of number ```Number.isSafeInteger()```
+
+## String
+
+With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for Numbers.
+
+A BigInt is created by appending n to the end of an integer or by calling the constructor.
+
+```const x = 2 ** 53```
+
+It has total three Symbolic value
+```+Infinity```, ```-Infinity```, ```NaN```.
+
+To check limit ```Number.MAX_SAFE_INTEGER``` and ```Number.MIN_SAFE_INTEGER```.
+
+To check safety of number ```Number.isSafeInteger()```
+
+BigInts cannot be operated on interchangeably with Numbers. TypeError will be thrown.
+
+## String
+
+JavaScript's String type is used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values.
+
+Unlike some programming languages (such as C), JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it.
+
+## Symbol
+
+A “symbol” represents a unique identifier.
+
+A value of this type can be created using ```Symbol()```.
+
+```let id = Symbol();```
+
+With description
+```let id = Symbol("id");```
+
+
+Symbols are guaranteed to be unique. Even if we create many symbols with the same description, they are different values. The description is just a label that doesn’t affect anything.
+```
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+id1 == id2;
+```
+
+Symbols don’t auto-convert to a string
+
+```alert(id)```
+
+#### Hidden properties
+Symbols allow us to create “hidden” properties of an object, that no other part of code can accidentally access or overwrite.
+
+```
+let user = { // belongs to another code
+  name: "John"
+};
+let id = Symbol("id");
+user[id] = 1;
+user[id];
+```
+
+#### Symbols are skipped by most of iterators
+```
+let id = Symbol("id");
+let user = {
+  name: "John",
+  age: 30,
+  [id]: 123
+};
+
+for (let key in user) alert(key);
+```
+
+#### Global symbols
+```
+// read from the global registry
+let id = Symbol.for("id"); // if the symbol did not exist, it is created
+
+// read it again (maybe from another part of the code)
+let idAgain = Symbol.for("id");
+
+// the same symbol
+alert( id === idAgain ); // true
+```
+
+#### Symbol.keyFor
+```
+let globalSymbol = Symbol.for("name");
+let localSymbol = Symbol("name");
+
+alert( Symbol.keyFor(globalSymbol) ); // name, global symbol
+alert( Symbol.keyFor(localSymbol) ); // undefined, not global
+
+alert( localSymbol.description ); // name
+```
+
