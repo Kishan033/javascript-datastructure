@@ -236,3 +236,5 @@ console.log(set);
 ```
 
 Methods like add, delete, has, clear, size
+
+For complex data structure refer https://github.com/trekhleb/javascript-algorithms
