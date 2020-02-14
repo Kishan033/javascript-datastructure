@@ -80,3 +80,13 @@ undefined means a variable has been declared but has not yet been assigned a val
 null is an assignment value. It can be assigned to a variable as a representation of no value
 undefined is a type itself (undefined) while null is an object
 
+## Number
+
+The Number type is a 64-bit binary format value. It is able to represent floating-point numbers.
+
+It has total three Symbolic value
+```+Infinity```, ```-Infinity```, ```NaN```.
+
+To check limit ```Number.MAX_SAFE_INTEGER``` and ```Number.MIN_SAFE_INTEGER```.
+
+To check safety of number ```Number.isSafeInteger()```
