@@ -60,3 +60,23 @@ Do not use a Boolean object to convert a non-boolean value to a boolean value. T
 var x = Boolean(expression);
 var x = !!(expression);
 ```
+
+## Null
+
+The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values and is treated as falsy for boolean operations.
+
+null expresses a lack of identification, indicating that a variable points to no object.
+
+## Undefined
+
+undefined is a property of the global object. That is, it is a variable in global scope.
+Since EcmaScript 5, it is specified as non-writable.
+
+1)A variable that has not been assigned a value is of type undefined. 2)
+A function returns undefined if a value was not returned.
+
+## Null vs Undefined
+undefined means a variable has been declared but has not yet been assigned a value
+null is an assignment value. It can be assigned to a variable as a representation of no value
+undefined is a type itself (undefined) while null is an object
+
